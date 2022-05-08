@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/User/Desktop/oop/project1/Diary.h
+iostream
+-
+User.h
+C:/Users/User/Desktop/oop/project1/User.h
+
+C:/Users/User/Desktop/oop/project1/PersonalDB.h
+Trip.h
+C:/Users/User/Desktop/oop/project1/Trip.h
+
+C:/Users/User/Desktop/oop/project1/Trip.h
+cstring
+-
+cassert
+-
+
+C:/Users/User/Desktop/oop/project1/User.h
+cstring
+-
+cassert
+-
+Trip.h
+C:/Users/User/Desktop/oop/project1/Trip.h
+
+C:/Users/User/Desktop/oop/project1/main.cpp
+iostream
+-
+Diary.h
+C:/Users/User/Desktop/oop/project1/Diary.h
+PersonalDB.h
+C:/Users/User/Desktop/oop/project1/PersonalDB.h
+
