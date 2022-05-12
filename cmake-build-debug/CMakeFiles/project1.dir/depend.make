@@ -6,10 +6,12 @@ CMakeFiles/project1.dir/Diary.cpp.obj: \
  ../Diary.h \
  ../Trip.h \
  ../User.h
-CMakeFiles/project1.dir/PersonalDB.cpp.obj: \
- ../PersonalDB.cpp \
- ../PersonalDB.h \
- ../Trip.h
+CMakeFiles/project1.dir/Program.cpp.obj: \
+ ../Diary.h \
+ ../Program.cpp \
+ ../Program.h \
+ ../Trip.h \
+ ../User.h
 CMakeFiles/project1.dir/Trip.cpp.obj: \
  ../Trip.cpp \
  ../Trip.h
@@ -19,7 +21,7 @@ CMakeFiles/project1.dir/User.cpp.obj: \
  ../User.h
 CMakeFiles/project1.dir/main.cpp.obj: \
  ../Diary.h \
- ../PersonalDB.h \
+ ../Program.h \
  ../Trip.h \
  ../User.h \
  ../main.cpp

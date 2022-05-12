@@ -1,12 +1,9 @@
-//
-// Created by User on 6.5.2022 г..
-//
-
 #ifndef PROJECT1_TRIP_H
 #define PROJECT1_TRIP_H
 #include <cstring>
 #include <cassert>
 #include <fstream>
+#include <iostream>
 struct Date {
     int day;
     int month;
@@ -19,9 +16,16 @@ struct Date {
                 (this->year == other.year && this->month == other.month && this->day < other.day);
     };
     friend std::ostream& operator <<(std::ostream &out, const Date &date) {
-        out<<date.year<<"-"<<date.month<<"-"<<date.day<<"\n";
+        out<<date.day<<"\n"<<date.month<<"\n"<<date.year<<"\n";
         return out;
     };
+    friend std::istream& operator >>(std::istream &in, Date &date) {
+        in>>date.year>>date.month>>date.day;
+        return in;
+    };
+    void print() const {
+        std::cout<<year<<"-"<<month<<"-"<<day<<"\n";
+    }
 };
 class Trip {
     char* destination;
@@ -39,8 +43,13 @@ public:
     Trip& operator = (const Trip& other);
     ~Trip();
     friend std::ostream &operator<<(std::ostream &out, const Trip &trip);
+    friend std::istream &operator>>(std::istream &in, Trip &trip);
     const char* getDestination () const;
     const int getGrade() const;
-    //eventually change photos and others
+    const Date& getStartDate() const;
+    const Date& getEndDate() const;
+    const char* getComment() const;
+    char** getPhotos() const;
+    const int getNumPhotos() const;
 };
 #endif //PROJECT1_TRIP_H

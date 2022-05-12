@@ -11,17 +11,13 @@ class Diary {
     void reallocate(size_t _size);
 public:
     Diary();
-    //Diary(size_t _size, size_t _capacity, const User** _users);
     Diary(const Diary& other);
     Diary& operator = (const Diary& other);
     ~Diary();
     void insert(const User& user);
-    void checkReviews(const char* destination);
-    bool validName(const char* name);
-    bool validDate(const Date& start, const Date& end);
-    bool validPhoto(const char* photo);
-    bool validGrade(int grade);
     User** getUsers() const;
+    int getSize() const;
+
 };
 
 

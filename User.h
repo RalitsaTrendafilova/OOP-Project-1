@@ -1,7 +1,3 @@
-//
-// Created by User on 6.5.2022 г..
-//
-
 #ifndef PROJECT1_USER_H
 #define PROJECT1_USER_H
 #include <cstring>

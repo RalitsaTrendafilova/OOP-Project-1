@@ -14,7 +14,7 @@ Trip::Trip( char* _destination,  Date& _start,  Date& _end, int _grade,  char* _
     grade = _grade;
 
     assert(_comment);
-    destination = new char[strlen(_comment) + 1];
+    comment = new char[strlen(_comment) + 1];
     strcpy(comment, _comment);
 
     numPhotos = _numPhotos;
@@ -79,29 +79,15 @@ Trip::~Trip() {
 }
 
 std::ostream & operator<<(std::ostream &out, const Trip &trip) {
-    out<<"Destination\n";
-    for (int i = 0; i < 100; ++i) {
-        out<<"-";
-    }
-    out<<"\n"<<trip.destination<<"\nTime period\n";
-    for (int i = 0; i < 100; ++i) {
-        out<<"-";
-    }
-    out<<"\n"<<trip.start<<trip.end<<"Grade\n";
-    for (int i = 0; i < 100; ++i) {
-        out<<"-";
-    }
-    out<<"\n"<<trip.grade<<"\nComment\n";
-    for (int i = 0; i < 100; ++i) {
-        out<<"-";
-    }
-    out<<"\n"<<trip.comment<<"\nPhotos:\n";
-    for (int i = 0; i < 100; ++i) {
-        out<<"-";
-    }
+    out<<trip.destination<<'\n';
+    out<<trip.start<<trip.end;
+    out<<trip.grade<<"\n";
+    out<<trip.comment<<"\n";
+    out<<trip.numPhotos<<"\n";
     for (int i = 0; i < trip.numPhotos; ++i) {
         out<<trip.photos[i]<<'\n';
     }
+    out<<"*\n";
     return out;
 }
 
@@ -111,4 +97,32 @@ const char *Trip::getDestination() const {
 
 const int Trip::getGrade() const {
     return grade;
+}
+
+std::istream &operator>>(std::istream &in, Trip &trip) {
+    in >>trip.destination>>trip.start>>trip.end>>trip.grade>>trip.comment>>trip.numPhotos;
+    for (int i = 0; i < trip.numPhotos; ++i) {
+        in>>trip.photos[i];
+    }
+    return in;
+}
+
+const Date &Trip::getStartDate() const {
+    return start;
+}
+
+const Date &Trip::getEndDate() const {
+    return end;
+}
+
+const char *Trip::getComment() const {
+    return comment;
+}
+
+char **Trip::getPhotos() const {
+    return photos;
+}
+
+const int Trip::getNumPhotos() const {
+    return numPhotos;
 }

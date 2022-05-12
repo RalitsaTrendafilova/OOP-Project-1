@@ -152,29 +152,29 @@ Diary.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Diary.cpp.s
 .PHONY : Diary.cpp.s
 
-PersonalDB.obj: PersonalDB.cpp.obj
-.PHONY : PersonalDB.obj
+Program.obj: Program.cpp.obj
+.PHONY : Program.obj
 
 # target to build an object file
-PersonalDB.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/PersonalDB.cpp.obj
-.PHONY : PersonalDB.cpp.obj
+Program.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Program.cpp.obj
+.PHONY : Program.cpp.obj
 
-PersonalDB.i: PersonalDB.cpp.i
-.PHONY : PersonalDB.i
+Program.i: Program.cpp.i
+.PHONY : Program.i
 
 # target to preprocess a source file
-PersonalDB.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/PersonalDB.cpp.i
-.PHONY : PersonalDB.cpp.i
+Program.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Program.cpp.i
+.PHONY : Program.cpp.i
 
-PersonalDB.s: PersonalDB.cpp.s
-.PHONY : PersonalDB.s
+Program.s: Program.cpp.s
+.PHONY : Program.s
 
 # target to generate assembly for a file
-PersonalDB.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/PersonalDB.cpp.s
-.PHONY : PersonalDB.cpp.s
+Program.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Program.cpp.s
+.PHONY : Program.cpp.s
 
 Trip.obj: Trip.cpp.obj
 .PHONY : Trip.obj
@@ -260,9 +260,9 @@ help:
 	@echo ... Diary.obj
 	@echo ... Diary.i
 	@echo ... Diary.s
-	@echo ... PersonalDB.obj
-	@echo ... PersonalDB.i
-	@echo ... PersonalDB.s
+	@echo ... Program.obj
+	@echo ... Program.i
+	@echo ... Program.s
 	@echo ... Trip.obj
 	@echo ... Trip.i
 	@echo ... Trip.s

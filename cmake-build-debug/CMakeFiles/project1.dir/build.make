@@ -117,18 +117,18 @@ CMakeFiles/project1.dir/Trip.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/Trip.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Desktop\oop\project1\Trip.cpp -o CMakeFiles\project1.dir\Trip.cpp.s
 
-CMakeFiles/project1.dir/PersonalDB.cpp.obj: CMakeFiles/project1.dir/flags.make
-CMakeFiles/project1.dir/PersonalDB.cpp.obj: ../PersonalDB.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\Desktop\oop\project1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project1.dir/PersonalDB.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project1.dir\PersonalDB.cpp.obj -c C:\Users\User\Desktop\oop\project1\PersonalDB.cpp
+CMakeFiles/project1.dir/Program.cpp.obj: CMakeFiles/project1.dir/flags.make
+CMakeFiles/project1.dir/Program.cpp.obj: ../Program.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\Desktop\oop\project1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project1.dir/Program.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project1.dir\Program.cpp.obj -c C:\Users\User\Desktop\oop\project1\Program.cpp
 
-CMakeFiles/project1.dir/PersonalDB.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1.dir/PersonalDB.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Desktop\oop\project1\PersonalDB.cpp > CMakeFiles\project1.dir\PersonalDB.cpp.i
+CMakeFiles/project1.dir/Program.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1.dir/Program.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Desktop\oop\project1\Program.cpp > CMakeFiles\project1.dir\Program.cpp.i
 
-CMakeFiles/project1.dir/PersonalDB.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/PersonalDB.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Desktop\oop\project1\PersonalDB.cpp -o CMakeFiles\project1.dir\PersonalDB.cpp.s
+CMakeFiles/project1.dir/Program.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/Program.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Desktop\oop\project1\Program.cpp -o CMakeFiles\project1.dir\Program.cpp.s
 
 # Object files for target project1
 project1_OBJECTS = \
@@ -136,7 +136,7 @@ project1_OBJECTS = \
 "CMakeFiles/project1.dir/Diary.cpp.obj" \
 "CMakeFiles/project1.dir/User.cpp.obj" \
 "CMakeFiles/project1.dir/Trip.cpp.obj" \
-"CMakeFiles/project1.dir/PersonalDB.cpp.obj"
+"CMakeFiles/project1.dir/Program.cpp.obj"
 
 # External object files for target project1
 project1_EXTERNAL_OBJECTS =
@@ -145,7 +145,7 @@ project1.exe: CMakeFiles/project1.dir/main.cpp.obj
 project1.exe: CMakeFiles/project1.dir/Diary.cpp.obj
 project1.exe: CMakeFiles/project1.dir/User.cpp.obj
 project1.exe: CMakeFiles/project1.dir/Trip.cpp.obj
-project1.exe: CMakeFiles/project1.dir/PersonalDB.cpp.obj
+project1.exe: CMakeFiles/project1.dir/Program.cpp.obj
 project1.exe: CMakeFiles/project1.dir/build.make
 project1.exe: CMakeFiles/project1.dir/linklibs.rsp
 project1.exe: CMakeFiles/project1.dir/objects1.rsp
