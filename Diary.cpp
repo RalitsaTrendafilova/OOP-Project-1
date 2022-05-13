@@ -47,12 +47,12 @@ Diary::~Diary() {
     size = 0;
     capacity = 0;
 }
-void Diary::insert(const User& user) {
+
+void Diary::insert(User* user) {
     size++;
     reallocate(size);
-    users[size - 1] = new User(user);
+    users[size - 1] = user;
 }
-
 
 User **Diary::getUsers() const {
     return users;

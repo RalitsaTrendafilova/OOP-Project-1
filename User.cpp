@@ -1,9 +1,5 @@
-//
-// Created by User on 6.5.2022 г..
-//
-
 #include "User.h"
-User::User():name (nullptr), password (nullptr), email (nullptr) {}
+User::User(): name (nullptr), password (nullptr), email (nullptr) {}
 User::User(const char* _name, const char* _password, const char* _email) {
     assert(_name);
     name = new char[strlen(_name) + 1];

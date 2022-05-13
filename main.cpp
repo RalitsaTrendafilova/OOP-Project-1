@@ -1,5 +1,5 @@
 #include "Program.h"
 
 int main() {
-    program.start();
+      Program::getProgram().start();
 }

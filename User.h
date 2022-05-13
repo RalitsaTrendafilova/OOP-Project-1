@@ -4,6 +4,7 @@
 #include <cassert>
 #include "Trip.h"
 class User {
+private:
     char* name;
     char* password;
     char* email;

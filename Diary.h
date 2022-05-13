@@ -4,6 +4,7 @@
 #include <iostream>
 #include "User.h"
 class Diary {
+private:
     User** users;
     size_t size;
     size_t capacity;
@@ -14,10 +15,9 @@ public:
     Diary(const Diary& other);
     Diary& operator = (const Diary& other);
     ~Diary();
-    void insert(const User& user);
+    void insert(User* user);
     User** getUsers() const;
     int getSize() const;
-
 };
 
 

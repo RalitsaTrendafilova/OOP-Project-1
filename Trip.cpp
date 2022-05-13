@@ -91,11 +91,7 @@ std::ostream & operator<<(std::ostream &out, const Trip &trip) {
     return out;
 }
 
-const char *Trip::getDestination() const {
-    return destination;
-}
-
-const int Trip::getGrade() const {
+int Trip::getGrade() const {
     return grade;
 }
 
@@ -107,22 +103,16 @@ std::istream &operator>>(std::istream &in, Trip &trip) {
     return in;
 }
 
-const Date &Trip::getStartDate() const {
-    return start;
-}
-
-const Date &Trip::getEndDate() const {
-    return end;
-}
-
-const char *Trip::getComment() const {
-    return comment;
-}
-
-char **Trip::getPhotos() const {
-    return photos;
-}
-
-const int Trip::getNumPhotos() const {
-    return numPhotos;
+void Trip::print() const {
+    cout<<"Destination:\n"<<destination<<"\n";
+    cout<<"Time period:\n";
+    start.print();
+    end.print();
+    cout<<"Grade: "<<grade<<"\n";
+    cout<<"Comment:\n"<<comment<<"\n";
+    cout<<"Photos:\n";
+    for (int k = 0; k < numPhotos; ++k) {
+        cout<<photos[k]<<"\n";
+    }
+    cout<<"-----------------\n";
 }

@@ -4,6 +4,10 @@
 #include <cassert>
 #include <fstream>
 #include <iostream>
+using std::cout;
+/**
+ *  A test class. A more elaborate class description.
+ */
 struct Date {
     int day;
     int month;
@@ -28,6 +32,7 @@ struct Date {
     }
 };
 class Trip {
+private:
     char* destination;
     Date start;
     Date end;
@@ -44,12 +49,7 @@ public:
     ~Trip();
     friend std::ostream &operator<<(std::ostream &out, const Trip &trip);
     friend std::istream &operator>>(std::istream &in, Trip &trip);
-    const char* getDestination () const;
-    const int getGrade() const;
-    const Date& getStartDate() const;
-    const Date& getEndDate() const;
-    const char* getComment() const;
-    char** getPhotos() const;
-    const int getNumPhotos() const;
+    void print() const;
+    int getGrade() const;
 };
 #endif //PROJECT1_TRIP_H
