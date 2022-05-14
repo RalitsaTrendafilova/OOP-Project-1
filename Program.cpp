@@ -15,8 +15,14 @@ bool Program::validDate (const Date& start, const Date& end) {
     if (start.month < 1 || start.month > 12 || end.month < 1 || end.month > 12) return false;
     if (start.day < 1 || start.day > 31 || end.day < 1 || end.day > 31) return  false;
     switch (start.month) {
-        case 2:
-            if (start.day > 28) return false;
+        case 2: {
+            if (isLeapYear(start.year)) {
+                if (start.day > 29) return false;
+            }
+            else {
+                if (start.day > 28) return false;
+            }
+        }
         case 4:
             if (start.day > 30) return false;
         case 6:
@@ -28,8 +34,14 @@ bool Program::validDate (const Date& start, const Date& end) {
 
     }
     switch (end.month) {
-        case 2:
-            if (end.day > 28) return false;
+        case 2:{
+            if (isLeapYear(end.year)) {
+                if (end.day > 29) return false;
+            }
+            else {
+                if (end.day > 28) return false;
+            }
+        }
         case 4:
             if (end.day > 30) return false;
         case 6:
@@ -173,6 +185,7 @@ bool Program::LogIn(Diary &diary) {
     if(!successfulLogin) cout<<"Wrong username or password.\n";
     delete[] name;
     delete[] password;
+    return true;
 }
 
 bool Program::addTrip(Diary &diary, const char *name) {
@@ -380,4 +393,8 @@ bool Program::checkReviews(Diary &diary) {
     }
     delete[] photos;
     return true;
+}
+
+bool Program::isLeapYear(int year) {
+        return (year % 400 == 0 && year % 100 != 0) || year % 4 == 0;
 }

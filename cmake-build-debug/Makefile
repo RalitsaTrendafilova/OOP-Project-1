@@ -56,23 +56,13 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\User\Desktop\oop\project1
+CMAKE_SOURCE_DIR = C:\Users\User\Desktop\oop\new\OOP-Project-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\User\Desktop\oop\project1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\User\Desktop\oop\new\OOP-Project-1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -84,11 +74,21 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\oop\project1\cmake-build-debug\CMakeFiles C:\Users\User\Desktop\oop\project1\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\oop\new\OOP-Project-1\cmake-build-debug\CMakeFiles C:\Users\User\Desktop\oop\new\OOP-Project-1\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\oop\project1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\oop\new\OOP-Project-1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named project1
+# Target rules for targets named OOP-Project-1
 
 # Build rule for target.
-project1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 project1
-.PHONY : project1
+OOP-Project-1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 OOP-Project-1
+.PHONY : OOP-Project-1
 
 # fast build rule for target.
-project1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/build
-.PHONY : project1/fast
+OOP-Project-1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/build
+.PHONY : OOP-Project-1/fast
 
 Diary.obj: Diary.cpp.obj
 .PHONY : Diary.obj
 
 # target to build an object file
 Diary.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Diary.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/Diary.cpp.obj
 .PHONY : Diary.cpp.obj
 
 Diary.i: Diary.cpp.i
@@ -141,7 +141,7 @@ Diary.i: Diary.cpp.i
 
 # target to preprocess a source file
 Diary.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Diary.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/Diary.cpp.i
 .PHONY : Diary.cpp.i
 
 Diary.s: Diary.cpp.s
@@ -149,7 +149,7 @@ Diary.s: Diary.cpp.s
 
 # target to generate assembly for a file
 Diary.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Diary.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/Diary.cpp.s
 .PHONY : Diary.cpp.s
 
 Program.obj: Program.cpp.obj
@@ -157,7 +157,7 @@ Program.obj: Program.cpp.obj
 
 # target to build an object file
 Program.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Program.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/Program.cpp.obj
 .PHONY : Program.cpp.obj
 
 Program.i: Program.cpp.i
@@ -165,7 +165,7 @@ Program.i: Program.cpp.i
 
 # target to preprocess a source file
 Program.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Program.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/Program.cpp.i
 .PHONY : Program.cpp.i
 
 Program.s: Program.cpp.s
@@ -173,7 +173,7 @@ Program.s: Program.cpp.s
 
 # target to generate assembly for a file
 Program.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Program.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/Program.cpp.s
 .PHONY : Program.cpp.s
 
 Trip.obj: Trip.cpp.obj
@@ -181,7 +181,7 @@ Trip.obj: Trip.cpp.obj
 
 # target to build an object file
 Trip.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Trip.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/Trip.cpp.obj
 .PHONY : Trip.cpp.obj
 
 Trip.i: Trip.cpp.i
@@ -189,7 +189,7 @@ Trip.i: Trip.cpp.i
 
 # target to preprocess a source file
 Trip.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Trip.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/Trip.cpp.i
 .PHONY : Trip.cpp.i
 
 Trip.s: Trip.cpp.s
@@ -197,7 +197,7 @@ Trip.s: Trip.cpp.s
 
 # target to generate assembly for a file
 Trip.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/Trip.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/Trip.cpp.s
 .PHONY : Trip.cpp.s
 
 User.obj: User.cpp.obj
@@ -205,7 +205,7 @@ User.obj: User.cpp.obj
 
 # target to build an object file
 User.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/User.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/User.cpp.obj
 .PHONY : User.cpp.obj
 
 User.i: User.cpp.i
@@ -213,7 +213,7 @@ User.i: User.cpp.i
 
 # target to preprocess a source file
 User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/User.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/User.cpp.i
 .PHONY : User.cpp.i
 
 User.s: User.cpp.s
@@ -221,7 +221,7 @@ User.s: User.cpp.s
 
 # target to generate assembly for a file
 User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/User.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/User.cpp.s
 .PHONY : User.cpp.s
 
 main.obj: main.cpp.obj
@@ -229,7 +229,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -237,7 +237,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -245,7 +245,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1.dir\build.make CMakeFiles/project1.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP-Project-1.dir\build.make CMakeFiles/OOP-Project-1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -256,7 +256,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... project1
+	@echo ... OOP-Project-1
 	@echo ... Diary.obj
 	@echo ... Diary.i
 	@echo ... Diary.s

@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="project1"/>
+		<Option title="OOP-Project-1"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -17,18 +17,8 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="project1">
-				<Option output="C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/project1.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="OOP-Project-1">
+				<Option output="C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/OOP-Project-1.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -43,14 +33,14 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 project1"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 OOP-Project-1"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="project1/fast">
-				<Option output="C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/project1.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="OOP-Project-1/fast">
+				<Option output="C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/OOP-Project-1.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -65,7 +55,7 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 project1/fast"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 OOP-Project-1/fast"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,33 +71,43 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/Diary.cpp">
-			<Option target="project1"/>
+			<Option target="OOP-Project-1"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/Diary.h">
-			<Option target="project1"/>
+			<Option target="OOP-Project-1"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/Program.cpp">
-			<Option target="project1"/>
+			<Option target="OOP-Project-1"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/Program.h">
-			<Option target="project1"/>
+			<Option target="OOP-Project-1"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/Trip.cpp">
-			<Option target="project1"/>
+			<Option target="OOP-Project-1"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/Trip.h">
-			<Option target="project1"/>
+			<Option target="OOP-Project-1"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/User.cpp">
-			<Option target="project1"/>
+			<Option target="OOP-Project-1"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/User.h">
-			<Option target="project1"/>
+			<Option target="OOP-Project-1"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/main.cpp">
-			<Option target="project1"/>
+			<Option target="OOP-Project-1"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/oop/new/OOP-Project-1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

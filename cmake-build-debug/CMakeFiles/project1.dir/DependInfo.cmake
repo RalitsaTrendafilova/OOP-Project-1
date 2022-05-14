@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/User/Desktop/oop/project1/Diary.cpp" "C:/Users/User/Desktop/oop/project1/cmake-build-debug/CMakeFiles/project1.dir/Diary.cpp.obj"
-  "C:/Users/User/Desktop/oop/project1/Program.cpp" "C:/Users/User/Desktop/oop/project1/cmake-build-debug/CMakeFiles/project1.dir/Program.cpp.obj"
-  "C:/Users/User/Desktop/oop/project1/Trip.cpp" "C:/Users/User/Desktop/oop/project1/cmake-build-debug/CMakeFiles/project1.dir/Trip.cpp.obj"
-  "C:/Users/User/Desktop/oop/project1/User.cpp" "C:/Users/User/Desktop/oop/project1/cmake-build-debug/CMakeFiles/project1.dir/User.cpp.obj"
-  "C:/Users/User/Desktop/oop/project1/main.cpp" "C:/Users/User/Desktop/oop/project1/cmake-build-debug/CMakeFiles/project1.dir/main.cpp.obj"
+  "C:/Users/User/Desktop/oop/new/OOP-Project-1/Diary.cpp" "C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/CMakeFiles/project1.dir/Diary.cpp.obj"
+  "C:/Users/User/Desktop/oop/new/OOP-Project-1/Program.cpp" "C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/CMakeFiles/project1.dir/Program.cpp.obj"
+  "C:/Users/User/Desktop/oop/new/OOP-Project-1/Trip.cpp" "C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/CMakeFiles/project1.dir/Trip.cpp.obj"
+  "C:/Users/User/Desktop/oop/new/OOP-Project-1/User.cpp" "C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/CMakeFiles/project1.dir/User.cpp.obj"
+  "C:/Users/User/Desktop/oop/new/OOP-Project-1/main.cpp" "C:/Users/User/Desktop/oop/new/OOP-Project-1/cmake-build-debug/CMakeFiles/project1.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
