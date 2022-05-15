@@ -1,0 +1,64 @@
+\hypertarget{_trip_8h_source}{}\doxysection{Trip.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PROJECT1\_TRIP\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PROJECT1\_TRIP\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cassert>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{keyword}{using }std::cout;}
+\DoxyCodeLine{12 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_date}{Date}} \{}
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} day;}
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} month;}
+\DoxyCodeLine{15     \textcolor{keywordtype}{int} year;}
+\DoxyCodeLine{16     \mbox{\hyperlink{struct_date}{Date}}(): day(0), month(0), year(0) \{\};}
+\DoxyCodeLine{20     \mbox{\hyperlink{struct_date_a19444fe103da92446b62d825cd76c1f8}{Date}}(\textcolor{keywordtype}{int} \_day, \textcolor{keywordtype}{int} \_month, \textcolor{keywordtype}{int} \_year): day(\_day), month(\_month), year(\_year) \{\};}
+\DoxyCodeLine{24     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_date_a56469dbfb6a0c32326330796cb316881}{operator < }}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_date}{Date}}\& other)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{25         \textcolor{keywordflow}{return}  (this-\/>year < other.year) ||}
+\DoxyCodeLine{26                 (this-\/>year == other.year \&\& this-\/>month < other.month) ||}
+\DoxyCodeLine{27                 (this-\/>year == other.year \&\& this-\/>month == other.month \&\& this-\/>day < other.day);}
+\DoxyCodeLine{28     \};}
+\DoxyCodeLine{32     \textcolor{keyword}{friend} std::ostream\& \mbox{\hyperlink{struct_date_ada4f8712609249fde898198589dc73e5}{operator <<}}(std::ostream \&out, \textcolor{keyword}{const} \mbox{\hyperlink{struct_date}{Date}} \&date) \{}
+\DoxyCodeLine{33         out<<date.day<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}}<<date.month<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}}<<date.year<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{34         \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{35     \};}
+\DoxyCodeLine{39     \textcolor{keyword}{friend} std::istream\& \mbox{\hyperlink{struct_date_a4d60fae6ffff4d027e1e987183c4cdbc}{operator >>}}(std::istream \&in, \mbox{\hyperlink{struct_date}{Date}} \&date) \{}
+\DoxyCodeLine{40         in>>date.year>>date.month>>date.day;}
+\DoxyCodeLine{41         \textcolor{keywordflow}{return} in;}
+\DoxyCodeLine{42     \};}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_date_aa3b521a999bdfafb51a934f01f8f6c9c}{print}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{47         cout<<year<<\textcolor{stringliteral}{"{}-\/"{}};}
+\DoxyCodeLine{48         \textcolor{keywordflow}{if} (month < 10) \{}
+\DoxyCodeLine{49             cout<<\textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{50         \}}
+\DoxyCodeLine{51         cout<<month<<\textcolor{stringliteral}{"{}-\/"{}};}
+\DoxyCodeLine{52         \textcolor{keywordflow}{if} (day < 10) \{}
+\DoxyCodeLine{53             cout<<\textcolor{stringliteral}{"{}0"{}};}
+\DoxyCodeLine{54         \}}
+\DoxyCodeLine{55         cout<<day<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{56     \}}
+\DoxyCodeLine{57 \};}
+\DoxyCodeLine{64 \textcolor{keyword}{class }\mbox{\hyperlink{class_trip}{Trip}} \{}
+\DoxyCodeLine{65 \textcolor{keyword}{private}:}
+\DoxyCodeLine{66     \textcolor{keywordtype}{char}* destination;}
+\DoxyCodeLine{67     \mbox{\hyperlink{struct_date}{Date}} start;}
+\DoxyCodeLine{68     \mbox{\hyperlink{struct_date}{Date}} end;}
+\DoxyCodeLine{69     \textcolor{keywordtype}{int} grade;}
+\DoxyCodeLine{70     \textcolor{keywordtype}{char}* comment;}
+\DoxyCodeLine{71     \textcolor{keywordtype}{char}** photos;}
+\DoxyCodeLine{72     \textcolor{keywordtype}{int} numPhotos;}
+\DoxyCodeLine{74 \textcolor{keyword}{public}:}
+\DoxyCodeLine{75     \mbox{\hyperlink{class_trip_aa67b77d0d2de622ed5eb9e9cad34db8f}{Trip}}();}
+\DoxyCodeLine{80     \mbox{\hyperlink{class_trip_aa67b77d0d2de622ed5eb9e9cad34db8f}{Trip}}(\textcolor{keywordtype}{char}* \_destination,  \mbox{\hyperlink{struct_date}{Date}}\& \_start,  \mbox{\hyperlink{struct_date}{Date}}\& \_end, \textcolor{keywordtype}{int} \_grade,  \textcolor{keywordtype}{char}* \_comment,  \textcolor{keywordtype}{char}** \_photos, \textcolor{keywordtype}{int} \_numPhotos);}
+\DoxyCodeLine{81     \mbox{\hyperlink{class_trip_aa67b77d0d2de622ed5eb9e9cad34db8f}{Trip}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_trip}{Trip}}\& other);}
+\DoxyCodeLine{82     \mbox{\hyperlink{class_trip}{Trip}}\& \mbox{\hyperlink{class_trip_ac9b4310c700c5e75962f672443525869}{operator = }}(\textcolor{keyword}{const} \mbox{\hyperlink{class_trip}{Trip}}\& other);}
+\DoxyCodeLine{83     \mbox{\hyperlink{class_trip_a2376daed3b03469163782ef0d0533d52}{\string~Trip}}();}
+\DoxyCodeLine{87     \textcolor{keyword}{friend} std::ostream \&\mbox{\hyperlink{class_trip_a985cc4593c33d43d785db170e9307c0c}{operator<<}}(std::ostream \&out, \textcolor{keyword}{const} \mbox{\hyperlink{class_trip}{Trip}} \&trip);}
+\DoxyCodeLine{91     \textcolor{keyword}{friend} std::istream \&\mbox{\hyperlink{class_trip_a183018383cbb2878b7df7687fffabff1}{operator>>}}(std::istream \&in, \mbox{\hyperlink{class_trip}{Trip}} \&trip);}
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_trip_ae1203d646b6c12187456ff9d9cccea68}{print}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{93     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_trip_a9cae56d716519526abce98b9c8f3fc2b}{getGrade}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{94 \};}
+\DoxyCodeLine{95 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJECT1\_TRIP\_H}}
+
+\end{DoxyCode}

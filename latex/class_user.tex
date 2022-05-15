@@ -1,0 +1,86 @@
+\hypertarget{class_user}{}\doxysection{User Class Reference}
+\label{class_user}\index{User@{User}}
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User}} ()
+\item 
+\mbox{\hyperlink{class_user_ad447fce500e1fa90a44187601316d180}{User}} (const char $\ast$\+\_\+name, const char $\ast$\+\_\+password, const char $\ast$\+\_\+email)
+\item 
+\mbox{\hyperlink{class_user_aad23b10cdefd26d6ca2ca981e9f9c973}{User}} (const \mbox{\hyperlink{class_user}{User}} \&other)
+\item 
+\mbox{\hyperlink{class_user}{User}} \& \mbox{\hyperlink{class_user_a00fe82353b0ee8cf6abb1088d36e125b}{operator=}} (const \mbox{\hyperlink{class_user}{User}} \&other)
+\item 
+\mbox{\hyperlink{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}{$\sim$\+User}} ()
+\item 
+const char $\ast$ \mbox{\hyperlink{class_user_a2a306840681c53c35c73721401061db5}{get\+Name}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{class_user_a922480bcf04a9b9f96eb6c9341b29d86}{get\+Password}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_user}{User}} class. An object of this class match an user that is added to the shared database. It is used to save the username, password and e-\/mail of the users. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_user_a4a0137053e591fbb79d9057dd7d2283d}\label{class_user_a4a0137053e591fbb79d9057dd7d2283d}} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \mbox{\Hypertarget{class_user_ad447fce500e1fa90a44187601316d180}\label{class_user_ad447fce500e1fa90a44187601316d180}} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{const char $\ast$}]{\+\_\+name,  }\item[{const char $\ast$}]{\+\_\+password,  }\item[{const char $\ast$}]{\+\_\+email }\end{DoxyParamCaption})}
+
+Parameter constructor that creates object of type \mbox{\hyperlink{class_user}{User}} by given name, password and e-\/mail. \mbox{\Hypertarget{class_user_aad23b10cdefd26d6ca2ca981e9f9c973}\label{class_user_aad23b10cdefd26d6ca2ca981e9f9c973}} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{other }\end{DoxyParamCaption})}
+
+Copy constructor. \mbox{\Hypertarget{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}\label{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}} 
+\index{User@{User}!````~User@{$\sim$User}}
+\index{````~User@{$\sim$User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{$\sim$User()}{~User()}}
+{\footnotesize\ttfamily User\+::$\sim$\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_a2a306840681c53c35c73721401061db5}\label{class_user_a2a306840681c53c35c73721401061db5}} 
+\index{User@{User}!getName@{getName}}
+\index{getName@{getName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const char $\ast$ User\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+username of the user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_a922480bcf04a9b9f96eb6c9341b29d86}\label{class_user_a922480bcf04a9b9f96eb6c9341b29d86}} 
+\index{User@{User}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily const char $\ast$ User\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+password of the user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_a00fe82353b0ee8cf6abb1088d36e125b}\label{class_user_a00fe82353b0ee8cf6abb1088d36e125b}} 
+\index{User@{User}!operator=@{operator=}}
+\index{operator=@{operator=}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user}{User}} \& User\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{other }\end{DoxyParamCaption})}
+
+Copy assignment operator. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User.\+h\item 
+User.\+cpp\end{DoxyCompactItemize}

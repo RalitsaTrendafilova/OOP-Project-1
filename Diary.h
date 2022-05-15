@@ -13,7 +13,7 @@ private:
     size_t size;/**< Indicates how many users are signed up in the database */
     size_t capacity;/**< Indicates the capacity of the database. */
 
-    void reallocate(size_t _size);/**< This function increases the capacity of the databes when needed. */
+    void reallocate(size_t _size);/**< This function increases the capacity of the database when needed. */
 public:
     Diary();/**< Default constructor. */
     Diary(const Diary& other);/**<  Copy constructor.*/

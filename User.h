@@ -5,6 +5,7 @@
 #include "Trip.h"
 /**
  * The User class. An object of this class match an user that is added to the shared database.
+ * It is used to save the username, password and e-mail of the users.
  * */
 class User {
 private:
@@ -21,8 +22,8 @@ public:
     User(const User& other);/**< Copy constructor. */
     User& operator = (const User& other);/**< Copy assignment operator. */
     ~User();/**< Destructor. */
-    const char* getName() const;/**< Returns the username of the user. */
-    const char* getPassword() const;/**< Returns the password of the user. */
+    const char* getName() const;/**< @return username of the user. */
+    const char* getPassword() const;/**< @return password of the user. */
 };
 
 

@@ -1,0 +1,80 @@
+\hypertarget{class_diary}{}\doxysection{Diary Class Reference}
+\label{class_diary}\index{Diary@{Diary}}
+
+
+{\ttfamily \#include $<$Diary.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_diary_a15ee393e12bc627de7930ec07186cb5f}{Diary}} ()
+\item 
+\mbox{\hyperlink{class_diary_afd27de3166d7929d2916cf0ce2851add}{Diary}} (const \mbox{\hyperlink{class_diary}{Diary}} \&other)
+\item 
+\mbox{\hyperlink{class_diary}{Diary}} \& \mbox{\hyperlink{class_diary_a26ed70402608841aa2817ff00018e548}{operator=}} (const \mbox{\hyperlink{class_diary}{Diary}} \&other)
+\item 
+\mbox{\hyperlink{class_diary_a5ca6c052ab0bd2644a9c523cf8ca3634}{$\sim$\+Diary}} ()
+\item 
+void \mbox{\hyperlink{class_diary_ae3033d26cf41eb97e7843fdc5dcc3d8c}{insert}} (\mbox{\hyperlink{class_user}{User}} $\ast$user)
+\item 
+\mbox{\hyperlink{class_user}{User}} $\ast$$\ast$ \mbox{\hyperlink{class_diary_a7683839bb5744d5ab399234a26abc646}{get\+Users}} () const
+\item 
+int \mbox{\hyperlink{class_diary_acb96c0c730cd8a99bb533b43aef940a0}{get\+Size}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_diary}{Diary}} class. This is the shared database that contains all users. It contains function that adds a new user to the database. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_diary_a15ee393e12bc627de7930ec07186cb5f}\label{class_diary_a15ee393e12bc627de7930ec07186cb5f}} 
+\index{Diary@{Diary}!Diary@{Diary}}
+\index{Diary@{Diary}!Diary@{Diary}}
+\doxysubsubsection{\texorpdfstring{Diary()}{Diary()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Diary\+::\+Diary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor. \mbox{\Hypertarget{class_diary_afd27de3166d7929d2916cf0ce2851add}\label{class_diary_afd27de3166d7929d2916cf0ce2851add}} 
+\index{Diary@{Diary}!Diary@{Diary}}
+\index{Diary@{Diary}!Diary@{Diary}}
+\doxysubsubsection{\texorpdfstring{Diary()}{Diary()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Diary\+::\+Diary (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_diary}{Diary}} \&}]{other }\end{DoxyParamCaption})}
+
+Copy constructor. \mbox{\Hypertarget{class_diary_a5ca6c052ab0bd2644a9c523cf8ca3634}\label{class_diary_a5ca6c052ab0bd2644a9c523cf8ca3634}} 
+\index{Diary@{Diary}!````~Diary@{$\sim$Diary}}
+\index{````~Diary@{$\sim$Diary}!Diary@{Diary}}
+\doxysubsubsection{\texorpdfstring{$\sim$Diary()}{~Diary()}}
+{\footnotesize\ttfamily Diary\+::$\sim$\+Diary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_diary_acb96c0c730cd8a99bb533b43aef940a0}\label{class_diary_acb96c0c730cd8a99bb533b43aef940a0}} 
+\index{Diary@{Diary}!getSize@{getSize}}
+\index{getSize@{getSize}!Diary@{Diary}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Diary\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns how many users are there in the database. \mbox{\Hypertarget{class_diary_a7683839bb5744d5ab399234a26abc646}\label{class_diary_a7683839bb5744d5ab399234a26abc646}} 
+\index{Diary@{Diary}!getUsers@{getUsers}}
+\index{getUsers@{getUsers}!Diary@{Diary}}
+\doxysubsubsection{\texorpdfstring{getUsers()}{getUsers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user}{User}} $\ast$$\ast$ Diary\+::get\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+This function returns pointer to the users in the database. \mbox{\Hypertarget{class_diary_ae3033d26cf41eb97e7843fdc5dcc3d8c}\label{class_diary_ae3033d26cf41eb97e7843fdc5dcc3d8c}} 
+\index{Diary@{Diary}!insert@{insert}}
+\index{insert@{insert}!Diary@{Diary}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Diary\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} $\ast$}]{user }\end{DoxyParamCaption})}
+
+This function adds a new user to the database. \mbox{\Hypertarget{class_diary_a26ed70402608841aa2817ff00018e548}\label{class_diary_a26ed70402608841aa2817ff00018e548}} 
+\index{Diary@{Diary}!operator=@{operator=}}
+\index{operator=@{operator=}!Diary@{Diary}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_diary}{Diary}} \& Diary\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_diary}{Diary}} \&}]{other }\end{DoxyParamCaption})}
+
+Copy assignment operator. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Diary.\+h\item 
+Diary.\+cpp\end{DoxyCompactItemize}

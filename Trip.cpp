@@ -17,6 +17,7 @@ Trip::Trip( char* _destination,  Date& _start,  Date& _end, int _grade,  char* _
     comment = new char[strlen(_comment) + 1];
     strcpy(comment, _comment);
 
+    assert(_photos);
     numPhotos = _numPhotos;
     photos = new char*[numPhotos];
     for (int i = 0; i < numPhotos; ++i) {

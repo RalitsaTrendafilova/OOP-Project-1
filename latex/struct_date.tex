@@ -1,0 +1,81 @@
+\hypertarget{struct_date}{}\doxysection{Date Struct Reference}
+\label{struct_date}\index{Date@{Date}}
+
+
+{\ttfamily \#include $<$Trip.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_date_a19444fe103da92446b62d825cd76c1f8}{Date}} (int \+\_\+day, int \+\_\+month, int \+\_\+year)
+\item 
+bool \mbox{\hyperlink{struct_date_a56469dbfb6a0c32326330796cb316881}{operator$<$}} (const \mbox{\hyperlink{struct_date}{Date}} \&other) const
+\item 
+void \mbox{\hyperlink{struct_date_aa3b521a999bdfafb51a934f01f8f6c9c}{print}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_date_a5b192adcabf2b2871e3f0b76c1ec1601}\label{struct_date_a5b192adcabf2b2871e3f0b76c1ec1601}} 
+int {\bfseries day}
+\item 
+\mbox{\Hypertarget{struct_date_a533843e07c6ac8d19fee9b16f5336ba2}\label{struct_date_a533843e07c6ac8d19fee9b16f5336ba2}} 
+int {\bfseries month}
+\item 
+\mbox{\Hypertarget{struct_date_a3eeced2ed56bc95d56782b9e738db8ea}\label{struct_date_a3eeced2ed56bc95d56782b9e738db8ea}} 
+int {\bfseries year}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{struct_date_ada4f8712609249fde898198589dc73e5}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{struct_date}{Date}} \&date)
+\item 
+std\+::istream \& \mbox{\hyperlink{struct_date_a4d60fae6ffff4d027e1e987183c4cdbc}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{struct_date}{Date}} \&date)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{struct_date}{Date}} class. It is used to save the start and end date of any trip so it can be easier to work with this data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_date_a19444fe103da92446b62d825cd76c1f8}\label{struct_date_a19444fe103da92446b62d825cd76c1f8}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{int}]{\+\_\+day,  }\item[{int}]{\+\_\+month,  }\item[{int}]{\+\_\+year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor Creates object of type \mbox{\hyperlink{struct_date}{Date}} by given day, month and year. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_date_a56469dbfb6a0c32326330796cb316881}\label{struct_date_a56469dbfb6a0c32326330796cb316881}} 
+\index{Date@{Date}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Date\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_date}{Date}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compares two dates based on which follows the other in time perspective. \mbox{\Hypertarget{struct_date_aa3b521a999bdfafb51a934f01f8f6c9c}\label{struct_date_aa3b521a999bdfafb51a934f01f8f6c9c}} 
+\index{Date@{Date}!print@{print}}
+\index{print@{print}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Date\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints the date in format YY-\/\+MM-\/\+DD. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{struct_date_ada4f8712609249fde898198589dc73e5}\label{struct_date_ada4f8712609249fde898198589dc73e5}} 
+\index{Date@{Date}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{struct_date}{Date}} \&}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Function that writes a given date in a file. \mbox{\Hypertarget{struct_date_a4d60fae6ffff4d027e1e987183c4cdbc}\label{struct_date_a4d60fae6ffff4d027e1e987183c4cdbc}} 
+\index{Date@{Date}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{struct_date}{Date}} \&}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Function that reads a given date from a file. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Trip.\+h\end{DoxyCompactItemize}

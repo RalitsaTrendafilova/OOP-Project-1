@@ -19,6 +19,9 @@ Diary::Diary (const Diary& other) {
 Diary& Diary::operator = (const Diary& other) {
     if (this != &other) {
         reallocate (other.size);
+        for (int i = 0; i < size; ++i) {
+            delete users[i];
+        }
         delete[] users;
         size = other.size;
         users = new User*[size];

@@ -1,0 +1,105 @@
+\hypertarget{class_trip}{}\doxysection{Trip Class Reference}
+\label{class_trip}\index{Trip@{Trip}}
+
+
+{\ttfamily \#include $<$Trip.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trip_aa67b77d0d2de622ed5eb9e9cad34db8f}{Trip}} ()
+\item 
+\mbox{\hyperlink{class_trip_a299af5ff6fac3f0c4118045020a4a92a}{Trip}} (char $\ast$\+\_\+destination, \mbox{\hyperlink{struct_date}{Date}} \&\+\_\+start, \mbox{\hyperlink{struct_date}{Date}} \&\+\_\+end, int \+\_\+grade, char $\ast$\+\_\+comment, char $\ast$$\ast$\+\_\+photos, int \+\_\+num\+Photos)
+\item 
+\mbox{\hyperlink{class_trip_a039bdfc9378c9d80c178191052dad275}{Trip}} (const \mbox{\hyperlink{class_trip}{Trip}} \&other)
+\item 
+\mbox{\hyperlink{class_trip}{Trip}} \& \mbox{\hyperlink{class_trip_ac9b4310c700c5e75962f672443525869}{operator=}} (const \mbox{\hyperlink{class_trip}{Trip}} \&other)
+\item 
+\mbox{\hyperlink{class_trip_a2376daed3b03469163782ef0d0533d52}{$\sim$\+Trip}} ()
+\item 
+void \mbox{\hyperlink{class_trip_ae1203d646b6c12187456ff9d9cccea68}{print}} () const
+\item 
+int \mbox{\hyperlink{class_trip_a9cae56d716519526abce98b9c8f3fc2b}{get\+Grade}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_trip_a985cc4593c33d43d785db170e9307c0c}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_trip}{Trip}} \&trip)
+\item 
+std\+::istream \& \mbox{\hyperlink{class_trip_a183018383cbb2878b7df7687fffabff1}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_trip}{Trip}} \&trip)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_trip}{Trip}} class. An object of this type matches a trip that an user want to upload to the database. It is also used when an user wants to check the reviews for a given destination. The functionalities of this class enable writing and reading the data from the personal database files of the users. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_trip_aa67b77d0d2de622ed5eb9e9cad34db8f}\label{class_trip_aa67b77d0d2de622ed5eb9e9cad34db8f}} 
+\index{Trip@{Trip}!Trip@{Trip}}
+\index{Trip@{Trip}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{Trip()}{Trip()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Trip\+::\+Trip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \mbox{\Hypertarget{class_trip_a299af5ff6fac3f0c4118045020a4a92a}\label{class_trip_a299af5ff6fac3f0c4118045020a4a92a}} 
+\index{Trip@{Trip}!Trip@{Trip}}
+\index{Trip@{Trip}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{Trip()}{Trip()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Trip\+::\+Trip (\begin{DoxyParamCaption}\item[{char $\ast$}]{\+\_\+destination,  }\item[{\mbox{\hyperlink{struct_date}{Date}} \&}]{\+\_\+start,  }\item[{\mbox{\hyperlink{struct_date}{Date}} \&}]{\+\_\+end,  }\item[{int}]{\+\_\+grade,  }\item[{char $\ast$}]{\+\_\+comment,  }\item[{char $\ast$$\ast$}]{\+\_\+photos,  }\item[{int}]{\+\_\+num\+Photos }\end{DoxyParamCaption})}
+
+Parameter constructor that is used to create an object of type \mbox{\hyperlink{class_trip}{Trip}} by given destination, start and end date, comment and list of photos. \mbox{\Hypertarget{class_trip_a039bdfc9378c9d80c178191052dad275}\label{class_trip_a039bdfc9378c9d80c178191052dad275}} 
+\index{Trip@{Trip}!Trip@{Trip}}
+\index{Trip@{Trip}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{Trip()}{Trip()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Trip\+::\+Trip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_trip}{Trip}} \&}]{other }\end{DoxyParamCaption})}
+
+Copy constructor \mbox{\Hypertarget{class_trip_a2376daed3b03469163782ef0d0533d52}\label{class_trip_a2376daed3b03469163782ef0d0533d52}} 
+\index{Trip@{Trip}!````~Trip@{$\sim$Trip}}
+\index{````~Trip@{$\sim$Trip}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{$\sim$Trip()}{~Trip()}}
+{\footnotesize\ttfamily Trip\+::$\sim$\+Trip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_trip_a9cae56d716519526abce98b9c8f3fc2b}\label{class_trip_a9cae56d716519526abce98b9c8f3fc2b}} 
+\index{Trip@{Trip}!getGrade@{getGrade}}
+\index{getGrade@{getGrade}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{getGrade()}{getGrade()}}
+{\footnotesize\ttfamily int Trip\+::get\+Grade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+grade of a given trip. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trip_ac9b4310c700c5e75962f672443525869}\label{class_trip_ac9b4310c700c5e75962f672443525869}} 
+\index{Trip@{Trip}!operator=@{operator=}}
+\index{operator=@{operator=}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_trip}{Trip}} \& Trip\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_trip}{Trip}} \&}]{other }\end{DoxyParamCaption})}
+
+Copy assignment operator \mbox{\Hypertarget{class_trip_ae1203d646b6c12187456ff9d9cccea68}\label{class_trip_ae1203d646b6c12187456ff9d9cccea68}} 
+\index{Trip@{Trip}!print@{print}}
+\index{print@{print}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Trip\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Prints a given trip. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_trip_a985cc4593c33d43d785db170e9307c0c}\label{class_trip_a985cc4593c33d43d785db170e9307c0c}} 
+\index{Trip@{Trip}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_trip}{Trip}} \&}]{trip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+This function writes a trip in a file. \mbox{\Hypertarget{class_trip_a183018383cbb2878b7df7687fffabff1}\label{class_trip_a183018383cbb2878b7df7687fffabff1}} 
+\index{Trip@{Trip}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Trip@{Trip}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_trip}{Trip}} \&}]{trip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+This function reads a trip from a file. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Trip.\+h\item 
+Trip.\+cpp\end{DoxyCompactItemize}

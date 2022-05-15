@@ -1,0 +1,28 @@
+\hypertarget{_diary_8h_source}{}\doxysection{Diary.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PROJECT1\_DIARY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PROJECT1\_DIARY\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}User.h"{}}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_diary}{Diary}} \{}
+\DoxyCodeLine{11 \textcolor{keyword}{private}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_user}{User}}** users;}
+\DoxyCodeLine{13     \textcolor{keywordtype}{size\_t} size;}
+\DoxyCodeLine{14     \textcolor{keywordtype}{size\_t} capacity;}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} reallocate(\textcolor{keywordtype}{size\_t} \_size);}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_diary_a15ee393e12bc627de7930ec07186cb5f}{Diary}}();}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_diary_a15ee393e12bc627de7930ec07186cb5f}{Diary}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_diary}{Diary}}\& other);}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_diary}{Diary}}\& \mbox{\hyperlink{class_diary_a26ed70402608841aa2817ff00018e548}{operator = }}(\textcolor{keyword}{const} \mbox{\hyperlink{class_diary}{Diary}}\& other);}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_diary_a5ca6c052ab0bd2644a9c523cf8ca3634}{\string~Diary}}();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_diary_ae3033d26cf41eb97e7843fdc5dcc3d8c}{insert}}(\mbox{\hyperlink{class_user}{User}}* user); }
+\DoxyCodeLine{23     \mbox{\hyperlink{class_user}{User}}** \mbox{\hyperlink{class_diary_a7683839bb5744d5ab399234a26abc646}{getUsers}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_diary_acb96c0c730cd8a99bb533b43aef940a0}{getSize}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{25 \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJECT1\_DIARY\_H}}
+
+\end{DoxyCode}

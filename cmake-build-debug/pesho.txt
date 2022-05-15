@@ -1,0 +1,39 @@
+Madrid, Spain
+20
+5
+2021
+23
+5
+2021
+5
+Madrid is one of the most beautiful cities in Spain.Within its boundaries you'll find a range of cultural and historical treasures such as the Royal Palace, Royal Theater along with numerous museums and art galleries that are unmatched elsewhere in Europe.
+3
+palace.png
+gardens.png
+zoo.jpeg
+*
+Plovdiv, Bulgaria
+20
+12
+2021
+3
+1
+2022
+4
+Surrounded by unique combination of culture and architecture from Antiquity, Middle ages and Bulgarian revival, and located on three of Plovdiv's hills, The old town is one of the most amazing places for a walk! Its full with antiquary stores and house museums on every corner, the visit is a must!
+2
+amphitheatre.jpeg
+hill.jpeg
+*
+Varna, Bulgaria
+1
+8
+2020
+9
+8
+2020
+5
+ Beautiful long beaches, crystal clear waters, lively atmosphere and countless bars and restaurants with delicious local cuisine and drinks.
+1
+seagarden.png
+*

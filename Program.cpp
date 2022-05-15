@@ -65,9 +65,14 @@ bool Program::validPhoto (const char* photo) {
                 extension[len - j - 1] = photo[j];
             }
             extension[rest] = '\0';
-            if(strcmp(extension, "gnp") != 0 && strcmp(extension, "gepj") != 0)
+            if(strcmp(extension, "gnp") != 0 && strcmp(extension, "gepj") != 0) {
+                delete[] extension;
                 return false;
-            else return true;
+            }
+            else {
+                delete[] extension;
+                return true;
+            }
         }
         if (!((photo[i] >= 'a' && photo[i] <= 'z') ||
               (photo[i] >= 'A' && photo[i] <= 'Z') ||
@@ -85,11 +90,11 @@ int Program::start() {
     short command;
     Diary diary;
     while (!exit) {
-        cout<<"Choose command:\n1. Sign up\n2. Log in\n3. Exit\n";
+        cout<<"Choose command:\n1. Sign up\n2. Log in\n3. Exit\nEnter the number.\n";
         cin>>command;
         if (command == 1) {
             SignUp(diary);
-        }
+         }
         else if (command == 2) {
             LogIn(diary);
         }
@@ -109,7 +114,7 @@ Program &Program::getProgram() {
     return program;
 }
 
-bool Program::SignUp(Diary& diary) {
+void Program::SignUp(Diary& diary) {
     char* name = new char[MAX_LENGTH];
     char* password = new char[MAX_LENGTH];
     char* email = new char[MAX_LENGTH];
@@ -117,11 +122,17 @@ bool Program::SignUp(Diary& diary) {
     cin>>name;
     if(!validName(name)) {
         cout<<"Invalid name!\n";
-        return false;
+        delete[] name;
+        delete[] password;
+        delete[] email;
+        return;
     }
     if(!availableUsername(diary, name)) {
         cout<<"That username is already used!\n";
-        return false;
+        delete[] name;
+        delete[] password;
+        delete[] email;
+        return;
     }
     cout<<"\nEnter password:";
     cin>>password;
@@ -132,7 +143,6 @@ bool Program::SignUp(Diary& diary) {
     delete[] name;
     delete[] password;
     delete[] email;
-    return true;
 }
 
 bool Program::availableUsername(Diary &diary, const char *name) {
@@ -144,7 +154,7 @@ bool Program::availableUsername(Diary &diary, const char *name) {
     return true;
 }
 
-bool Program::LogIn(Diary &diary) {
+void Program::LogIn(Diary &diary) {
     bool successfulLogin = false;
     int command;
     char* name = new char[MAX_LENGTH];
@@ -185,7 +195,6 @@ bool Program::LogIn(Diary &diary) {
     if(!successfulLogin) cout<<"Wrong username or password.\n";
     delete[] name;
     delete[] password;
-    return true;
 }
 
 bool Program::addTrip(Diary &diary, const char *name) {
@@ -227,7 +236,7 @@ bool Program::addTrip(Diary &diary, const char *name) {
     cout<<"\nEnter how many photos you want to upload:";
     cin>>numPhotos;
     char** photos = new char*[numPhotos];
-    cout<<"\nEnter names of the photos:";
+    cout<<"\nEnter names of the photos. '.png' or '.jpeg' extension is required:";
     for (int k = 0; k < numPhotos; ++k) {
         cin>>curPhoto;
         if (!validPhoto(curPhoto)) {
@@ -235,7 +244,7 @@ bool Program::addTrip(Diary &diary, const char *name) {
             delete[] destination;
             delete[] curPhoto;
             delete[] comment;
-            for (int j = 0; j < numPhotos; ++j) {
+            for (int j = 0; j < k; ++j) {
                 delete[] photos[j];
             }
             delete[] photos;
@@ -302,10 +311,6 @@ bool Program::checkReviews(Diary &diary) {
             delete[] destination;
             delete[] curPhoto;
             delete[] comment;
-            for (int j = 0; j < numPhotos; ++j) {
-                delete[] photos[j];
-            }
-            delete[] photos;
             return false;
         }
         int row = 1;
@@ -377,6 +382,7 @@ bool Program::checkReviews(Diary &diary) {
                 row++;
             }
         }
+        file.close();
     }
     if(!found) {
         cout<<"No reviews for this destination.\n";
