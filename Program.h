@@ -9,6 +9,7 @@
 using std::cout;
 using std::cin;
 /**
+ * Github: https://github.com/RalitsaTrendafilova/OOP-Project-1.git
  * The main Program class. It is a singleton class.
  * This class contains the function that starts the app, validation functions and the functions related to the main
  * functionalities of the program such as Log In, Sign Up, Checking the reviews for a given destination

@@ -304,7 +304,7 @@ bool Program::checkReviews(Diary &diary) {
         strcat(filename, ".txt");
         std::ifstream file(filename);
         if (!file.is_open()) {
-            cout<<"Could not open database of: "<<diary.getUsers()[j]->getName();
+            cout<<"Could not open database of: "<<diary.getUsers()[j]->getName()<<"\n";
             delete[] filename;
             delete[] searchDestination;
             delete[] buffer;
